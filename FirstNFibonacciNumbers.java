@@ -4,16 +4,16 @@ import java.util.Scanner;
 public class FirstNFibonacciNumbers {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
-        int f1 = 1;
-        int f2 = 1;
-        int f3;
+        int fibo0 = 1;
+        int fibo1 = 1;
+        int fibo3;
         int number = scan.nextInt();
-        int sum = f1 + f2;
+        int sum = fibo0 + fibo1;
         for (int iteration = 0; iteration < number - 2; iteration++) {
-            f3 = f1 + f2;
-            f1= f2;
-            f2 = f3;
-            sum += f3;
+            fibo3 = fibo0 + fibo1;
+            fibo0= fibo1;
+            fibo1 = fibo3;
+            sum += fibo3;
         }
         System.out.println("Sum of N Fibonacci numbers = " + sum);
     }

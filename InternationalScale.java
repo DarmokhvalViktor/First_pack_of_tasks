@@ -3,10 +3,13 @@ import java.util.Scanner;
 
 public class InternationalScale {
     public static void main(String[] args) {
+
         Scanner scan = new Scanner(System.in);
         System.out.println("Enter the student's grade on an international scale: ");
         String grade = scan.nextLine();
+
         grade = grade.toUpperCase();
+
         switch(grade) {
             case "A":
                 System.out.println("Відмінно");

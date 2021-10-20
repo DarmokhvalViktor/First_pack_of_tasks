@@ -3,6 +3,7 @@ import java.util.Scanner;
 
 public class Deposit {
     public static void main(String[] args) {
+
         Scanner scan = new Scanner(System.in);
 
         System.out.println("Enter the deposit amount: ");
